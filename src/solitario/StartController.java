@@ -31,8 +31,8 @@ public class StartController {
 
 	public ArrayList<Stack<Card>> getPilasTapadas() {
 		ArrayList<Stack<Card>> pilas = new ArrayList<Stack<Card>>();
+		int numCartas = 0;
 		for(int i = 0; i<7 ; i++){
-			int numCartas = 0;
 			Card card;
 			Stack<Card> cartas = new Stack<Card>();
 			for(int j = 0; j<numCartas; j++){
