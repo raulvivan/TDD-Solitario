@@ -48,6 +48,10 @@ public class StartControllerTest {
 		int i = 0;
 		for(ArrayList<Card> cartas: pilas){
 			assertEquals(i, cartas.size());
+			for(Card carta: cartas){
+				assertNotNull(carta);
+				assertFalse(carta.uncovered());
+			}
 		}
 	}
 
