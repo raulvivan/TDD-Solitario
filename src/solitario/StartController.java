@@ -52,9 +52,9 @@ public class StartController {
 	}
 
 	public ArrayList<Stack<Card>> getPilasPalos() {
-		ArrayList<ArrayList<Card>> pilas = new ArrayList<ArrayList<Card>>();
+		ArrayList<Stack<Card>> pilas = new ArrayList<Stack<Card>>();
 		for(int i = 0; i < 4; i++){
-			pilas.add(new ArrayList<Card>());
+			pilas.add(new Stack<Card>());
 		}
 		return pilas;
 	}
