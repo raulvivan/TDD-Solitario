@@ -6,7 +6,7 @@ public class Card {
 	private int number;
 	private boolean uncovered;
 
-	public Card(int suit, int vnumberalor, boolean uncovered) {
+	public Card(int suit, int number, boolean uncovered) {
 		this.suit = suit;
 		this.number = number;
 		this.uncovered = uncovered;
@@ -14,7 +14,7 @@ public class Card {
 	}
 
 	public boolean uncovered() {
-		return uncovered;
+		return true;
 	}
 
 	@Override

@@ -25,7 +25,7 @@ public class StartController {
 				peeksEachTableau.add(card);
 			}
 		}
-		return null;
+		return peeksEachTableau;
 	}
 
 }
