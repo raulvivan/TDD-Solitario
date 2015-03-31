@@ -51,7 +51,7 @@ public class StartController {
 		return pilas;
 	}
 
-	public ArrayList<ArrayList<Card>> getPilasPalos() {
+	public ArrayList<Stack<Card>> getPilasPalos() {
 		ArrayList<ArrayList<Card>> pilas = new ArrayList<ArrayList<Card>>();
 		for(int i = 0; i < 4; i++){
 			pilas.add(new ArrayList<Card>());
