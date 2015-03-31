@@ -72,5 +72,10 @@ public class StartControllerTest {
 		
 		assertTrue(descartes.isEmpty());
 	}
+	
+	@Test
+	public void getBarajaTest(){
+		Stack<Card> baraja = startController.getBaraja();
+	}
 
 }

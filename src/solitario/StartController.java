@@ -63,4 +63,9 @@ public class StartController {
 		return new Stack<Card>();
 	}
 
+	public Stack<Card> getBaraja() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
