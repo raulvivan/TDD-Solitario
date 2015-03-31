@@ -58,4 +58,9 @@ public class StartController {
 		return pilas;
 	}
 
+	public ArrayList<Card> getDescartes() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

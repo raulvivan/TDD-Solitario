@@ -64,5 +64,10 @@ public class StartControllerTest {
 			assertTrue(cartas.isEmpty());
 		}
 	}
+	
+	@Test
+	public void getDescartesTest(){
+		ArrayList<Card> descartes = startController.getDescartes();
+	}
 
 }
