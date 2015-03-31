@@ -43,6 +43,10 @@ public class StartControllerTest {
 	@Test
 	public void getPilasTapadasTest(){
 		ArrayList<ArrayList<Card>> pilas = startController.getPilasTapadas();
+		
+		assertEquals(7, pilas.size());
+		
+		
 	}
 
 }
