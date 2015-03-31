@@ -3,6 +3,7 @@ package test;
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
+import java.util.Stack;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -42,11 +43,11 @@ public class StartControllerTest {
 	
 	@Test
 	public void getPilasTapadasTest(){
-		ArrayList<ArrayList<Card>> pilas = startController.getPilasTapadas();
+		ArrayList<Stack<Card>> pilas = startController.getPilasTapadas();
 		
 		assertEquals(7, pilas.size());
 		int i = 0;
-		for(ArrayList<Card> cartas: pilas){
+		for(Stack<Card> cartas: pilas){
 			assertEquals(i, cartas.size());
 			for(Card carta: cartas){
 				assertNotNull(carta);
