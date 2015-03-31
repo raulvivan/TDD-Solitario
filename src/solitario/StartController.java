@@ -60,8 +60,7 @@ public class StartController {
 	}
 
 	public Stack<Card> getDescartes() {
-		// TODO Auto-generated method stub
-		return null;
+		return new Stack<Card>();
 	}
 
 }
