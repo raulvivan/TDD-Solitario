@@ -4,15 +4,17 @@ public class Card {
 
 	private int suit;
 	private int number;
+	private boolean uncovered;
 
-	public Card(int suit, int vnumberalor) {
+	public Card(int suit, int vnumberalor, boolean uncovered) {
 		this.suit = suit;
 		this.number = number;
+		this.uncovered = uncovered;
 
 	}
 
 	public boolean uncovered() {
-		return true;
+		return uncovered;
 	}
 
 	@Override

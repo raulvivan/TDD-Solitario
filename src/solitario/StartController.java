@@ -18,7 +18,7 @@ public class StartController {
 			Card card;
 			do{
 				Random r = new Random();
-				card = new Card(r.nextInt(3), r.nextInt(11));
+				card = new Card(r.nextInt(3), r.nextInt(11), true);
 				
 			}while(peeksEachTableau.contains(card));
 			{
