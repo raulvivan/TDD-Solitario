@@ -38,8 +38,11 @@ public class StartControllerTest {
 			assertTrue(card.uncovered());
 			//assertFalse(peeksEachTableau.);
 		}
-
-		
+	}
+	
+	@Test
+	public void getPilasTapadasTest(){
+		ArrayList<ArrayList<Card>> pilas = startController.getPilasTapadas();
 	}
 
 }

@@ -28,4 +28,9 @@ public class StartController {
 		return peeksEachTableau;
 	}
 
+	public ArrayList<ArrayList<Card>> getPilasTapadas() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
