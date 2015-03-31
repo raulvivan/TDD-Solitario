@@ -58,6 +58,11 @@ public class StartControllerTest {
 	@Test
 	public void getPilasPalosTest(){
 		ArrayList<ArrayList<Card>> pilas = startController.getPilasPalos();
+		
+		assertEquals(4, pilas.size());
+		for(ArrayList<Card> cartas: pilas){
+			assertTrue(cartas.isEmpty());
+		}
 	}
 
 }
