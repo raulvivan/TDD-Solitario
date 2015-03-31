@@ -53,6 +53,7 @@ public class StartControllerTest {
 				assertNotNull(carta);
 				assertFalse(carta.uncovered());
 			}
+			i++;
 		}
 	}
 	

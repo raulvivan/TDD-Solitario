@@ -14,7 +14,7 @@ public class Card {
 	}
 
 	public boolean uncovered() {
-		return true;
+		return uncovered;
 	}
 
 	@Override
