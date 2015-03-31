@@ -51,8 +51,11 @@ public class StartController {
 	}
 
 	public ArrayList<ArrayList<Card>> getPilasPalos() {
-		// TODO Auto-generated method stub
-		return null;
+		ArrayList<ArrayList<Card>> pilas = new ArrayList<ArrayList<Card>>();
+		for(int i = 0; i < 4; i++){
+			pilas.add(new ArrayList<Card>());
+		}
+		return pilas;
 	}
 
 }
