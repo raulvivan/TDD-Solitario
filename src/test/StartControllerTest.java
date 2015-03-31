@@ -54,5 +54,10 @@ public class StartControllerTest {
 			}
 		}
 	}
+	
+	@Test
+	public void getPilasPalosTest(){
+		ArrayList<ArrayList<Card>> pilas = startController.getPilasPalos();
+	}
 
 }
