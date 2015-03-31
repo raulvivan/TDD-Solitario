@@ -68,7 +68,7 @@ public class StartControllerTest {
 	
 	@Test
 	public void getDescartesTest(){
-		ArrayList<Card> descartes = startController.getDescartes();
+		Stack<Card> descartes = startController.getDescartes();
 	}
 
 }
