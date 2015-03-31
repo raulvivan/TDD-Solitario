@@ -2,6 +2,7 @@ package solitario;
 
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Stack;
 
 
 
@@ -28,12 +29,12 @@ public class StartController {
 		return peeksEachTableau;
 	}
 
-	public ArrayList<ArrayList<Card>> getPilasTapadas() {
-		ArrayList<ArrayList<Card>> pilas = new ArrayList<ArrayList<Card>>();
+	public ArrayList<Stack<Card>> getPilasTapadas() {
+		ArrayList<Stack<Card>> pilas = new ArrayList<Stack<Card>>();
 		for(int i = 0; i<7 ; i++){
 			int numCartas = 0;
 			Card card;
-			ArrayList<Card> cartas = new ArrayList<Card>();
+			Stack<Card> cartas = new Stack<Card>();
 			for(int j = 0; j<numCartas; j++){
 				do{
 					Random r = new Random();
@@ -41,7 +42,7 @@ public class StartController {
 					
 				}while(cartas.contains(card));
 				{
-					cartas.add(card);
+					cartas.push(card);
 				}
 			}
 			numCartas++;
