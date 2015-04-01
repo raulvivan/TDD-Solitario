@@ -3,6 +3,7 @@ package test;
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
+import java.util.Stack;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -24,14 +25,16 @@ public class MoveCardControllerTest {
 
 
 	@Test
-	public void test() {
-		ArrayList<Card> wasteCards = moveCardController.getWasteCards();
+	public void MoverBarajaADescarteTest() {
+		moveCardController.moverBarajaADescarte();
+		Stack<Card> wasteCards = moveCardController.getWasteCards();
 
 		assertEquals(3, wasteCards.size());
 		
 		for (Card card : wasteCards) {
 			assertNotNull(card);
 			assertTrue(card.uncovered());
+			assertTrue(wasteCards.indexOf(card) != wasteCards.lastIndexOf(card));
 		}
 	}
 
