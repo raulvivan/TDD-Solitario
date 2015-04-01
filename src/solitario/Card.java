@@ -16,6 +16,10 @@ public class Card {
 	public boolean uncovered() {
 		return uncovered;
 	}
+	
+	public void flip(){
+		this.uncovered = !this.uncovered;
+	}
 
 	@Override
 	public boolean equals(Object object){
