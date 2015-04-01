@@ -33,7 +33,7 @@ public class MoveCardControllerTest {
 		for (Card card : wasteCards) {
 			assertNotNull(card);
 			assertTrue(card.uncovered());
-			assertTrue(wasteCards.indexOf(card) != wasteCards.lastIndexOf(card));
+			assertTrue(wasteCards.indexOf(card) == wasteCards.lastIndexOf(card));
 		}
 	}
 

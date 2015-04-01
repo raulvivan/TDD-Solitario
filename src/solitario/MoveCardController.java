@@ -19,7 +19,9 @@ public class MoveCardController {
 
 	public void moverBarajaADescarte() {
 		for(int i = 0; i<CARTASROBAR; i++){
-			cardsWasteStack.push(cardsDeckStack.pop());
+			Card card = cardsDeckStack.pop();
+			card.flip();
+			cardsWasteStack.push(card);
 		}
 	}
 
